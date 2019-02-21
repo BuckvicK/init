@@ -1,0 +1,4 @@
+#Set password for newuser:
+passwd newuser
+#Connect SSH:
+ssh -p 2222 newuser@192.168.56.1
