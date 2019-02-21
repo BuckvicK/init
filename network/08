@@ -1,0 +1,5 @@
+# Get IP from 5 column
+dig -t A slash16.org +noall +answer
+# Find provider for ip address 13.32.43.118
+dig -x 13.32.43.118
+# This provider cloudfront == Amazon
