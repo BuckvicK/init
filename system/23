@@ -1,4 +1,9 @@
-#Set password for newuser:
-passwd newuser
+#Set password for newuser, if password dont set in 22:
+#passwd newuser
+#Connetct in graphic session:
+#Logout -> Select newuser
+#In terminal:
+#su - newuser
+
 #Connect SSH:
 ssh -p 2222 newuser@192.168.56.1

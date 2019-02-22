@@ -1,0 +1,16 @@
+#!/bin/bash
+#!/bin/bash
+if [ $# -eq 1 ]
+then
+	USRS=$(users)
+	if [[ $(users | xargs -n1 echo | grep -x $1) ]]
+	then
+		sudo killall -u $1 -9
+		sudo userdel -f -r $1
+		echo "User delete"
+	else
+		echo "User not active"
+	fi
+else
+	echo "usage ./02 username"
+fi

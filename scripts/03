@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ $# -eq 1 ]
+then
+	curl -4 wttr.in/$1
+else
+	echo "usage: ./03 city"
+fi
